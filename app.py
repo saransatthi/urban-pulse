@@ -10,7 +10,7 @@ st.set_page_config(
 
 from pathlib import Path
 
-DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(_file_)), "urban_pulse_cleaned1.zip")
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "urban_pulse_cleaned1.zip")
 
 @st.cache_data
 def load_data():
