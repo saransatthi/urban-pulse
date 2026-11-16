@@ -7,7 +7,9 @@ st.set_page_config(
     layout="wide"
 )
 
-DATA_FILE = "Urban_pulse_cleaned1.zip"
+from pathlib import Path
+
+DATA_FILE = Path(_file_).resolve().parent / "urban_pulse_cleaned1.zip"
 
 @st.cache_data
 def load_data():
