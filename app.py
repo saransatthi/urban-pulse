@@ -1,7 +1,6 @@
-import os
 import streamlit as st
 import pandas as pd
-from pathlib import Path
+import os
 
 st.set_page_config(
     page_title="Urban Pulse",
