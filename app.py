@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 from pathlib import Path
@@ -10,7 +11,7 @@ st.set_page_config(
 
 from pathlib import Path
 
-DATA_FILE = Path(_file_).resolve().parent / "urban_pulse_cleaned1.zip"
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(_file_)), "urban_pulse_cleaned1.zip")
 
 @st.cache_data
 def load_data():
